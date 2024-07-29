@@ -1,75 +1,74 @@
 package util.banner;
 
+import util.color.ColorEnum;
 import util.color.ColorUtil;
+import util.color.FormatEnum;
 
 public class BannerUtil {
 
     public static void menuBanner() {
-        ColorUtil.showInYellow("  _   _                        ____                  \n" +
+        ColorUtil.showFormatted("  _   _                        ____                  \n" +
                 " | | | | ___  _ __ ___   ___  |  _ \\ __ _  __ _  ___ \n" +
                 " | |_| |/ _ \\| '_ ` _ \\ / _ \\ | |_) / _` |/ _` |/ _ \\\n" +
                 " |  _  | (_) | | | | | |  __/ |  __/ (_| | (_| |  __/\n" +
                 " |_| |_|\\___/|_| |_| |_|\\___| |_|   \\__,_|\\__, |\\___|\n" +
-                "                                          |___/      \n");
+                "                                          |___/      \n", ColorEnum.ANSI_YELLOW, FormatEnum.ANSI_BLINK);
     }
 
     public static void loginBanner() {
-        ColorUtil.showInPurple(" _                _         ____                  \n" +
+        ColorUtil.showFormatted(" _                _         ____                  \n" +
                 " | |    ___   __ _(_)_ __   |  _ \\ __ _  __ _  ___ \n" +
                 " | |   / _ \\ / _` | | '_ \\  | |_) / _` |/ _` |/ _ \\\n" +
                 " | |__| (_) | (_| | | | | | |  __/ (_| | (_| |  __/\n" +
                 " |_____\\___/ \\__, |_|_| |_| |_|   \\__,_|\\__, |\\___|\n" +
-                "             |___/                      |___/      \n");
+                "             |___/                      |___/      \n", ColorEnum.ANSI_PURPLE, FormatEnum.ANSI_BLINK);
     }
 
     public static void registerBanner() {
-        ColorUtil.showInPurple("  ____            _     _              ____                  \n" +
+        ColorUtil.showFormatted("  ____            _     _              ____                  \n" +
                 " |  _ \\ ___  __ _(_)___| |_ ___ _ __  |  _ \\ __ _  __ _  ___ \n" +
                 " | |_) / _ \\/ _` | / __| __/ _ \\ '__| | |_) / _` |/ _` |/ _ \\\n" +
                 " |  _ <  __/ (_| | \\__ \\ ||  __/ |    |  __/ (_| | (_| |  __/\n" +
                 " |_| \\_\\___|\\__, |_|___/\\__\\___|_|    |_|   \\__,_|\\__, |\\___|\n" +
-                "            |___/                                 |___/      \n");
+                "            |___/                                 |___/      \n", ColorEnum.ANSI_PURPLE, FormatEnum.ANSI_BLINK);
     }
 
     public static void addStudentBanner() {
-        ColorUtil.showInPurple("     _       _     _   ____  _             _            _         ____                  \n" +
+        ColorUtil.showFormatted("     _       _     _   ____  _             _            _         ____                  \n" +
                 "    / \\   __| | __| | / ___|| |_ _   _  __| | ___ _ __ | |_ ___  |  _ \\ __ _  __ _  ___ \n" +
                 "   / _ \\ / _` |/ _` | \\___ \\| __| | | |/ _` |/ _ \\ '_ \\| __/ __| | |_) / _` |/ _` |/ _ \\\n" +
                 "  / ___ \\ (_| | (_| |  ___) | |_| |_| | (_| |  __/ | | | |_\\__ \\ |  __/ (_| | (_| |  __/\n" +
                 " /_/   \\_\\__,_|\\__,_| |____/ \\__|\\__,_|\\__,_|\\___|_| |_|\\__|___/ |_|   \\__,_|\\__, |\\___|\n" +
-                "                                                                             |___/      \n");
+                "                                                                             |___/      \n", ColorEnum.ANSI_CYAN, FormatEnum.ANSI_BLINK);
     }
 
     public static void addTeacherBanner() {
-        ColorUtil.showInPurple("     _       _     _   _____               _                     ____                  \n" +
+        ColorUtil.showFormatted("     _       _     _   _____               _                     ____                  \n" +
                 "    / \\   __| | __| | |_   _|__  __ _  ___| |__   ___ _ __ ___  |  _ \\ __ _  __ _  ___ \n" +
                 "   / _ \\ / _` |/ _` |   | |/ _ \\/ _` |/ __| '_ \\ / _ \\ '__/ __| | |_) / _` |/ _` |/ _ \\\n" +
                 "  / ___ \\ (_| | (_| |   | |  __/ (_| | (__| | | |  __/ |  \\__ \\ |  __/ (_| | (_| |  __/\n" +
                 " /_/   \\_\\__,_|\\__,_|   |_|\\___|\\__,_|\\___|_| |_|\\___|_|  |___/ |_|   \\__,_|\\__, |\\___|\n" +
-                "                                                                            |___/      \n");
+                "                                                                            |___/      \n", ColorEnum.ANSI_CYAN, FormatEnum.ANSI_BLINK);
     }
 
     public static void AllStudentListBanner() {
-        ColorUtil.showInPurple("  ____  _             _            _         _     _     _     ____                  \n" +
+        ColorUtil.showFormatted("  ____  _             _            _         _     _     _     ____                  \n" +
                 " / ___|| |_ _   _  __| | ___ _ __ | |_ ___  | |   (_)___| |_  |  _ \\ __ _  __ _  ___ \n" +
                 " \\___ \\| __| | | |/ _` |/ _ \\ '_ \\| __/ __| | |   | / __| __| | |_) / _` |/ _` |/ _ \\\n" +
                 "  ___) | |_| |_| | (_| |  __/ | | | |_\\__ \\ | |___| \\__ \\ |_  |  __/ (_| | (_| |  __/\n" +
                 " |____/ \\__|\\__,_|\\__,_|\\___|_| |_|\\__|___/ |_____|_|___/\\__| |_|   \\__,_|\\__, |\\___|\n" +
-                "                                                                          |___/      \n");
+                "                                                                          |___/      \n", ColorEnum.ANSI_PURPLE, FormatEnum.ANSI_BLINK);
     }
 
     public static void AllTeacherListBanner() {
-       ColorUtil.showInPurple("  _____               _                     _     _     _     ____                  \n" +
+       ColorUtil.showFormatted("  _____               _                     _     _     _     ____                  \n" +
                " |_   _|__  __ _  ___| |__   ___ _ __ ___  | |   (_)___| |_  |  _ \\ __ _  __ _  ___ \n" +
                "   | |/ _ \\/ _` |/ __| '_ \\ / _ \\ '__/ __| | |   | / __| __| | |_) / _` |/ _` |/ _ \\\n" +
                "   | |  __/ (_| | (__| | | |  __/ |  \\__ \\ | |___| \\__ \\ |_  |  __/ (_| | (_| |  __/\n" +
                "   |_|\\___|\\__,_|\\___|_| |_|\\___|_|  |___/ |_____|_|___/\\__| |_|   \\__,_|\\__, |\\___|\n" +
-               "                                                                         |___/      \n");
+               "                                                                         |___/      \n", ColorEnum.ANSI_PURPLE, FormatEnum.ANSI_BLINK);
     }
 
-    public static void ExitBanner() {
-        BannerUtil.menuBanner();
-    }
 
 
 }

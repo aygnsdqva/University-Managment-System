@@ -2,7 +2,9 @@ package service;
 
 import service.interfaces.sub.LoginServiceInterSub;
 import util.banner.BannerUtil;
+import util.color.ColorEnum;
 import util.color.ColorUtil;
+import util.color.FormatEnum;
 import util.main.MainUtil;
 import util.scanner.ScannerUtil;
 
@@ -16,12 +18,12 @@ public class LoginService implements LoginServiceInterSub {
         boolean valid = false;
         while (!valid){
             if(username.equals("Aygun") && password.equals("admin123")){
-                ColorUtil.showInGreen("Congratulations, you're logged in!");
+                ColorUtil.showFormatted("Congratulations, you're logged in!", ColorEnum.ANSI_GREEN, FormatEnum.ANSI_BOLD);
                 valid = true;
                 MainUtil.isLoggedIn = true;
             }else {
                 System.out.println();
-                ColorUtil.showInRed("Wrong Username or password!");
+                ColorUtil.showFormatted("Wrong Username or password!",ColorEnum.ANSI_RED);
                 System.out.println();
                 username  = ScannerUtil.stringScanner("Please enter again Username: ");
                 password  = ScannerUtil.stringScanner("Please enter again Password: ");

@@ -4,7 +4,9 @@ import bean.Content;
 import bean.Student;
 import service.interfaces.sub.AddStudentServiceInterSub;
 import util.banner.BannerUtil;
+import util.color.ColorEnum;
 import util.color.ColorUtil;
+import util.color.FormatEnum;
 import util.scanner.ScannerUtil;
 
 import java.util.List;
@@ -25,7 +27,7 @@ public class AddStudentService implements AddStudentServiceInterSub {
         }
         Content.getInstance().setStudents(students);
         Content.save();
-        ColorUtil.showInGreen("Adding students successfully");
+        ColorUtil.showFormatted("Adding students successfully", ColorEnum.ANSI_GREEN, FormatEnum.ANSI_BOLD);
     }
 }
 
